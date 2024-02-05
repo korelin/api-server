@@ -1,5 +1,9 @@
 # api-server Project
 
+```sh
+quarkus create app ru.tinkoff:api-server:0.1.0
+```
+
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
 If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
