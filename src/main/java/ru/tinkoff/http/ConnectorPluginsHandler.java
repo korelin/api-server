@@ -17,6 +17,6 @@ public class ConnectorPluginsHandler {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public List<String> list() {
-        return kafkaConnectService.getConnectors();
+        return kafkaConnectService.getConnectorPlugins();
     }
 }

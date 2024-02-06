@@ -12,7 +12,7 @@ public class KafkaConnectService {
     @Inject
     KafkaConnectRepository kafkaConnectRepository;
 
-    public List<String> getConnectors() {
+    public List<String> getConnectorPlugins() {
         return kafkaConnectRepository.getPlugins().stream().map(ConnectorPlugin::className).collect(Collectors.toList());
     }
 }

@@ -1,0 +1,16 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/connector-plugins"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": [
+      {"class":"io.confluent.connect.jdbc.JdbcSinkConnector","type":"sink","version":"10.6.0"},
+      {"class":"io.confluent.connect.jdbc.JdbcSourceConnector","type":"source","version":"10.6.0"}
+    ]
+  }
+}

@@ -43,7 +43,7 @@ public class HttpKafkaConnectApiClient implements KafkaConnectApiClient {
             var result = httpResponse.bodyAsJson(ConnectorPlugin[].class);
             return Arrays.stream(result).toList();
         } else {
-            throw new RuntimeException("Failed to list connector plugins");
+            throw new RuntimeException("Failed to list connector plugins. Response: " + httpResponse.bodyAsString());
         }
     }
 }
